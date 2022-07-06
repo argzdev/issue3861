@@ -7,8 +7,6 @@ plugins {
 android {
     compileSdk 32
 
-    dynamicFeatures = [":dynamic_feature", ":dynamic_feature2", ':feature1']
-
     defaultConfig {
         applicationId "com.argz.issue3861"
         minSdk 21
