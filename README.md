@@ -7,9 +7,10 @@
 - Open app
 - Sync gradle builds
 ### Summary
-- `Caused by: groovy.lang.MissingMethodException: No signature of method: build_` is encountered when `firebaseCrashlytics` is included in the `dynamic-feature` module.
-- Relevant code (:dynamic-feature > build.gradle):
-
+- Created a clean app and added a dynamic-feature module named `:feature1`, added Firebase Crashlytics NDK in `build.gradle` of `:feature1`
+### Error
+- Syncing gradle causes error: `Caused by: groovy.lang.MissingMethodException: No signature of method: build_` is encountered when `firebaseCrashlytics` is included in the `dynamic-feature` module.
+- Relevant code:
 ```
 buildTypes {
   debug {
